@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:text="Sort Flats"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="#d33606"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Sort By Locality Rating"
+        android:textSize="15dp"
+        android:id="@+id/loc_rating"
+        android:textColor="#d33606"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/builder_rating"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Sort By Builder Rating"
+        android:textSize="15dp"
+        android:textColor="#d33606"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/pricel2h"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Sort By Price(low to high)"
+        android:textSize="15dp"
+        android:textColor="#d33606"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/priceh2l"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Sort by Price(high to low)"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#d33606"/>
+
+
+</LinearLayout>
