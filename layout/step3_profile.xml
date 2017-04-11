@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/home"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Step 3: Social Profiles"/>
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fconnect"/>
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/gconnect"/>
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/lconnect"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_back2"
+            android:text="Back"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_cont3"
+            android:text="Continue"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>

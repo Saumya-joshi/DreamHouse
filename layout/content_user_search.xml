@@ -1,0 +1,86 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="60dp"
+    android:background="@drawable/customborder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ImageView android:src="@drawable/home"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="35dp"
+        android:orientation="vertical">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="280dp"
+            android:layout_height="fill_parent">
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                />
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:id="@+id/map_panel">
+
+        <fragment
+            android:id="@+id/map1"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.saumyajoshi.minorproject.UserSearch" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="#d33606"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Range (km)"
+            android:id="@+id/user_range"
+            android:layout_width="280dp"
+            android:textColor="#d33606"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_search"
+        android:text="Search"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_width="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="95dp"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
